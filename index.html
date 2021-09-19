@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- user card -->
+      <article class="user__card">
+        <div class="user-card__body">
+          <div class="user-card-image__container">
+            <img
+              class="user-card__image"
+              src="images/image-jeremy.png"
+              alt=""
+            />
+          </div>
+          <div class="user-card__info">
+            <span class="user-card__present">Report for</span>
+            <h1 class="user-card__name">Jeremi Robson</h1>
+          </div>
+        </div>
+        <div class="user-card__footer">
+          <ul class="user-card__lists">
+            <li>Daily</li>
+            <li>Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </div>
+      </article>
+      <!-- activities -->
+      <div class="activities__wrapper">
+        <article class="card card--orange">
+          <img class="card__icon" src="images/icon-work.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Work</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >32hrs</span
+              >
+              <span class="card__moment">Last Week - 36hrs</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--blue">
+          <img class="card__icon" src="images/icon-play.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Play</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >10hrs</span
+              >
+              <span class="card__moment">Last Week - 8hrs</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--red">
+          <img class="card__icon" src="images/icon-study.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Study</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >4hrs</span
+              >
+              <span class="card__moment">Last Week - 7hrs</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--green">
+          <img class="card__icon" src="images/icon-exercise.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Exercise</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >4hrs</span
+              >
+              <span class="card__moment">Last Week - 5hrs</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--violet">
+          <img class="card__icon" src="images/icon-social.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Social</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >5hrs</span
+              >
+              <span class="card__moment">Last Week - 10hrs</span>
+            </div>
+          </div>
+        </article>
+        <article class="card card--yellow">
+          <img class="card__icon" src="images/icon-self-care.svg" alt="" />
+          <div class="card__body">
+            <div class="card__title">
+              <span class="card__name">Self Care</span>
+              <img src="images/icon-ellipsis.svg" alt="" />
+            </div>
+            <div class="card__time">
+              <span
+                class="
+                  card__hrs
+                  animate__animated
+                  animate__rubberBand
+                  animate__slower
+                  animate__infinite
+                "
+                >2hrs</span
+              >
+              <span class="card__moment">Last Week - 2hrs</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>

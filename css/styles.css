@@ -1,0 +1,254 @@
+:root {
+  /* primary */
+  --clr-blue: hsl(246, 80%, 60%);
+  --clr-light-work: hsl(15, 100%, 70%);
+  --clr-soft-blue: hsl(195, 74%, 62%);
+  --clr-light-red: hsl(348, 100%, 68%);
+  --clr-lime-green: hsl(145, 58%, 55%);
+  --clr-violet: hsl(264, 64%, 52%);
+  --clr-soft-orange: hsl(43, 84%, 65%);
+
+  /* secondary */
+  --clr-very-dark-blue: hsl(226, 43%, 10%);
+  --clr-dark-blue: hsl(235, 46%, 20%);
+  --clr-desaturated-blue: hsl(235, 45%, 61%);
+  --clr-pale-blue: hsl(236, 100%, 87%);
+
+  /* typograpy */
+  --text-body: 1.8rem;
+
+  /* radius */
+  --round: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+}
+
+body {
+  align-items: center;
+  background: var(--clr-very-dark-blue);
+  color: var(--clr-pale-blue);
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  font-size: var(--text-body);
+  height: 100vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* =========== user card ============ */
+
+.user__card {
+  background: var(--clr-dark-blue);
+  border-radius: var(--round);
+}
+
+.user-card__body {
+  align-items: center;
+  background: var(--clr-blue);
+  border-radius: var(--round);
+  display: flex;
+  padding: 3rem 2rem;
+}
+
+.user-card__image {
+  width: 6rem;
+  height: 6rem;
+}
+
+.user-card-image__container {
+  background: white;
+  border-radius: 50%;
+  display: grid;
+  margin-right: 2rem;
+  padding: 0.4rem;
+  place-content: center;
+}
+
+.user-card__info {
+  padding: 2rem 0;
+}
+
+.user-card__present {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.user-card__name {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.user-card__footer {
+  padding: 2rem 3rem;
+}
+
+.user-card__lists {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.user-card__lists {
+  color: var(--clr-desaturated-blue);
+}
+
+.user-card__lists > li:nth-child(2) {
+  color: var(--clr-pale-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .user__card {
+    max-width: 250px;
+  }
+
+  .user-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-card__info {
+    margin-top: 1rem;
+  }
+
+  .user-card__lists {
+    flex-direction: column;
+  }
+  .user-card__lists > li:nth-child(2) {
+    margin: 2rem 0;
+  }
+}
+
+/* activities card */
+
+.card {
+  border-radius: var(--round);
+  margin-top: 2rem;
+  overflow: hidden;
+  padding-top: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card__name {
+  color: white;
+  font-weight: 500;
+}
+
+.card__icon {
+  position: absolute;
+  right: 3rem;
+  top: -0.8rem;
+  z-index: -1;
+}
+
+.card__body {
+  background: var(--clr-dark-blue);
+  border-radius: var(--round);
+  padding: 2rem;
+}
+
+.card__title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.card__time {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.card__hrs {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+}
+.card__moment {
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin-top: 0;
+  }
+
+  .card__time {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+.card--orange {
+  background: var(--clr-light-work);
+}
+
+.card--blue {
+  background: var(--clr-soft-blue);
+}
+
+.card--red {
+  background: var(--clr-light-red);
+}
+
+.card--green {
+  background: var(--clr-lime-green);
+}
+
+.card--violet {
+  background: var(--clr-violet);
+}
+
+.card--yellow {
+  background: var(--clr-soft-orange);
+}
+
+/* activities wrapper */
+.activities__wrapper {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .activities__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .activities__wrapper {
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
